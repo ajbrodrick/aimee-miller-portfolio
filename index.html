@@ -11,6 +11,11 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,32 +35,77 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
       <div class="container">
         <a class="navbar-brand" href="index.html">Aimee Miller</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About me</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                User Experience
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="digitalprofession.html"
+                  >Case study on the establishment of the APS Digital
+                  Profession</a
+                >
+                <a class="dropdown-item" href="userexperience.html"
+                  >Case study on employee experience mapping during COVID-19</a
+                >
+                <a class="dropdown-item" href="#"
+                  >Case study on the Australian Government Digital
+                  Transformation Strategy</a
+                >
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html#contact">Contact</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Visual Design
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Personal Project</a>
+                <a class="dropdown-item" href="#">Freelance Work</a>
+                <a class="dropdown-item" href="#">AI Generated Art</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -72,9 +122,9 @@
         />
       </div>
       <div class="row mt-5">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           <h1 class="mb-3 mt-3">Aimee Miller</h1>
-          <p>
+          <p class="home-para">
             My ambition is to deliver high quality solutions that achieve
             business objectives without compromising user experience. I have
             spent much of my career working in small multi-disciplinary teams in
@@ -82,14 +132,14 @@
             problems and deliver solutions that truly impact the lives of our
             users.
           </p>
-          <p>
+          <p class="home-para">
             I am experienced in service, UX & visual design as well as user
             research and project coordination. I like working on projects that
             create positive change in peoples lives. I love the challenge of
             working within business constrains to improve existing user
             journeys.
           </p>
-          <p>
+          <p class="home-para">
             hello@aimeemiller.com.au<br />
             0431 468 838<br />
             Canberra, Australia
@@ -106,7 +156,7 @@
             >
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <img
             src="images/portrait.png"
             alt="Aimee Miller"
@@ -116,82 +166,93 @@
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-md-6 order-md-1">
+      <div class="row mt-5 mb-5">
+        <div class="col-lg-6 order-lg-1">
           <img
-            src="images/yoga.png"
-            alt="Screenshoot of yoga app"
+            src="images/portfoliotiles-02.png"
+            alt="Digital Profession Members Community home page"
             class="img-fluid rounded"
           />
         </div>
-        <div class="col-md-6 order-md-2">
-          <h2 class="mb-3 mt-3">Yoga app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
+        <div class="col-lg-6 order-lg-2">
+          <h2 class="mb-3 mt-6">Establishment of the APS Digital Profession</h2>
+          <p class="home-para">
+            Involved in the Digital Profession for 3 years since its inception,
+            I had the opportunity to shape the members community, skills
+            framework and career pathway visualisation tool. <br /><br />
+
+            Digital and technology professionals are in high demand in all
+            sectors, but especially in the public sector. The intention of the
+            Digital Profession is to prioritise the development and retention of
+            APS digital talent, through more than just salary.
           </p>
           <div class="mt-5">
             <a
               href="#"
               class="primary-link"
-              title="Open yoga app in a new window"
-              >Launch Yoga App</a
+              title="Open case study exploring my work on the Digital Profession"
+              >View case study on the Digital Profession</a
             >
           </div>
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-md-6 order-md-4">
+      <div class="row mt-5 mb-5">
+        <div class="col-lg-6 order-lg-4">
           <img
-            src="images/weather.png"
-            alt="Screenshoot of weather app"
+            src="images/portfoliotiles-03.png"
+            alt="Journey map titled working from home during COVID-19"
             class="img-fluid rounded"
           />
         </div>
-        <div class="col-md-6 order-md-3">
-          <h2 class="mb-3 mt-3">Weather app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
+        <div class="col-lg-6 order-lg-3">
+          <h2 class="mb-3 mt-3">Employee experience mapping during COVID-19</h2>
+          <p class="home-para">
+            Rapid journey mapping and prototyping to improve support for APS
+            employees during COVID-19. <br /><br />
+            The Digital Transformation Agency is often looked to for advice on
+            digital ways of working, tools and remote collaboration. These
+            enquiries increased significantly as the volume of remote meetings
+            and workshops escalated due to the COVID-19 pandemic.
           </p>
           <div class="mb-5 mt-5">
             <a
               href="#"
               class="primary-link"
-              title="Open weather app in a new window"
-              >Launch Weather App</a
+              title="Open case study exploring my work mapping the employee experience during COVID-19"
+              >View case study on COVID19 experience mapping</a
             >
           </div>
         </div>
       </div>
 
-      <div class="row mt-5">
-        <div class="col-md-6">
+      <div class="row mt-5 mb-5">
+        <div class="col-lg-6">
           <img
-            src="images/yoghurt.png"
-            alt="Screenshoot of yoghurt app"
+            src="images/portfoliotiles-04.png"
+            alt="Journey map titled working from home during COVID-19"
             class="img-fluid rounded"
           />
         </div>
-        <div class="col-md-6">
-          <h2 class="mb-3 mt-3">Yoghurt app</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
+        <div class="col-lg-6">
+          <h2 class="mb-3 mt-3">
+            Australian Government <br />Digital Transformation Strategy
+          </h2>
+          <p class="home-para">
+            Developing a transformation strategy focused on user needs and
+            pitched directly to users. <br /><br />
+
+            This was one of the first strategies of its kind in the Australian
+            Government, where the DTA's Service Design and Delivery Process was
+            coupled with agile delivery methods to produce a strategy suitable
+            for everyday Australians to read and understand.
           </p>
           <div class="mt-5 mb-5">
             <a
               href="#"
               class="primary-link"
-              title="Open yoghurt app in a new window"
-              >Launch Yoghurt App</a
+              title="Open case study exploring my work on the Australian Government Digital Transformation Strategy"
+              >View case study on Digital Transformation Strategy</a
             >
           </div>
         </div>
@@ -200,10 +261,5 @@
     <footer>
       <p class="mb-5 mt-5 text-center">Coded by Aimee Miller</p>
     </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

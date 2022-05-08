@@ -122,6 +122,40 @@ p {
 
 .grey {
   border: solid 5px #e7e7e7;
+  cursor: pointer;
+}
+
+.scroll {
+  height: 850px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: auto;
+  cursor: grab;
+}
+
+#navbarNavDropdown > ul > li.nav-item.active {
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.dropdown-item:hover {
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: bold;
+}
+
+.dropdown-item:focus {
+  background-color: #e9ecef;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -170,5 +204,16 @@ p {
 @media screen and (min-width: 992px) {
   #portrait-mobile {
     display: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  .zoom:hover {
+    transform: scale(
+      1.2
+    ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 }
